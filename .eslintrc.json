@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": [
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jest/recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "prettier",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "linebreak-style": "off",
+        "prettier/prettier": [
+        "warn",
+        {"endOfLine": "auto"}],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any" : "off"
+    }
+}
