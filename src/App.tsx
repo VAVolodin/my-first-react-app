@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ClassComponent from './ClassComponent';
+// import ClassComponent from './ClassComponent';
 
 function App() {
     return (
