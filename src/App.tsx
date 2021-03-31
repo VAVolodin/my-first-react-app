@@ -6,8 +6,16 @@ import ClassComponent from './ClassComponent';
 function App() {
     return (
         <>
-            <ClassComponent dick={20} />
-            <ClassComponent ass="vtorye propersy" />
+            <div className="logo-wrap">
+                <img src={logo} alt="logo" className="App-logo" />
+                <img src={logo} alt="logo" className="App-logo" />
+            </div>
+            <ClassComponent data="a watch" num={20} />
+            <ClassComponent data="an apple" num={10} />
+            <div className="logo-wrap">
+                <img src={logo} alt="logo" className="App-logo" />
+                <img src={logo} alt="logo" className="App-logo" />
+            </div>
         </>
     );
 }
