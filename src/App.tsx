@@ -11,8 +11,8 @@ function App() {
                 <img src={logo} alt="logo" className="App-logo" />
                 <img src={logo} alt="logo" className="App-logo" />
             </div>
-            <ClassComponent data="a watch" num={20} />
-            <ClassComponent data="an apple" num={10} />
+            <ClassComponent title="a watch" cost={20} max={20} />
+            <ClassComponent title="an apple" cost={10} max={50} />
             <div className="logo-wrap">
                 <img src={logo} alt="logo" className="App-logo" />
                 <img src={logo} alt="logo" className="App-logo" />
