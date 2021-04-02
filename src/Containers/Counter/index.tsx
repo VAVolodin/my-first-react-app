@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from './Button';
-import style from './ClassComponent.module.scss';
-import ProductCard from './ProductCard';
+import Button from '../../Components/Common/Button';
+// import style from './ClassComponent.module.scss';
+import ProductCard from '../../Components/Card';
 
 interface IProps {
     title: string; // title?: необязательный к вызову параметр
@@ -27,6 +27,14 @@ class ClassComponent extends React.Component<IProps, IState> {
         // необходимо указать this.handleClickSub непосредственную внешнюю область представления, т.к. стрелочная функция handleClickAdd не имеет своего .this то берет его из внешнего окружения, т.е. у ClassComponent, для handleClickSub объявленной как funcion decaration метод .this обращается к самой вызывающей функции  далее к конструктору, что выдает ошибку this"undefined"
         // this.handleClickSub = this.handleClickSub.bind(this);
     }
+
+    //  исплоьзование метода для изменения проса в зависимости от полученного внутреннего состояния
+    // static getDerivedStateFromProps(nextProps: IProps, prevState: IState): any {
+    //     if (prevState.click === 3) {
+    //         return { step: 2 };
+    //     }
+    //     return null;
+    // }
 
     handleClickAdd = (step: number): any => () => {
         const { click } = this.state;

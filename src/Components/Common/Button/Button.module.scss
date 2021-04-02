@@ -3,16 +3,20 @@ button {
     border: none;
     background: none;
     cursor: pointer;
+    border-radius: 100%;
 }
     
 button:disabled {
     filter: blur(.7px);
     background: #d8d5d5;
-    border-radius: 100%;
 }
 
 button:focus {
     outline: none;
+}
+
+button:active {
+    background: #d8d5d5;
 }
 
 .button_wrap {

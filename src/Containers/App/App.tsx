@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../../assets/style/image/logo.svg';
 import './App.css';
-import ClassComponent from './ClassComponent';
+import Counter from '../Counter';
 // import ClassComponent from './ClassComponent';
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
                 <img src={logo} alt="logo" className="App-logo" />
                 <img src={logo} alt="logo" className="App-logo" />
             </div>
-            <ClassComponent title="a watch" cost={20} max={20} />
-            <ClassComponent title="an apple" cost={10} max={50} />
+            <Counter title="a watch" cost={20} max={20} />
+            <Counter title="an apple" cost={10} max={50} />
             <div className="logo-wrap">
                 <img src={logo} alt="logo" className="App-logo" />
                 <img src={logo} alt="logo" className="App-logo" />
